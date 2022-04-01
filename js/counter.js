@@ -1,5 +1,5 @@
 var yourDateToGo = new Date(); //here you're making new Date object
-    yourDateToGo.setDate(yourDateToGo.getDate() + 2); //your're setting date in this object 1 day more from now
+    yourDateToGo.setDate(yourDateToGo.getDate() + 30); //your're setting date in this object 1 day more from now
     //you can change number of days to go by putting any number in place of 2
 
     var timing = setInterval( // you're making an interval - a thing, that is updating content after number of miliseconds, that you're writing after comma as second parameter
