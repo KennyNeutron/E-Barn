@@ -1,592 +1,406 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!--Required Meta Tags-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/counter.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link  rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        
+        <!--Title-->
+        <title>E-Barn Unofficial</title>
 
-    <title>E-Barn</title>
-  </head>
-  <body>
-   <div class="container-fluid" style="background-color: #000000;">
-   	<div class="container">
-   		<nav class="navbar navbar-expand-lg ">
-  <a class="navbar-brand" href="#">E-Barn</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <!--Icon Page-->
+        <link rel="shortcut icon" href="img/E-BarnLOGO.png">
+    </head>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <body>
+        <!--Header Section-->
+        <header class="header">
+            <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> E-Barn</a>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Services</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#countdown">Countdown</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"></div>
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-solid fa-truck" id="cart-btn"></div>
+                <div class="fas fa-user" id="login-btn"></div>
+            </div>
+
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="Search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="shopping-cart">
+                <div class="box">
+                    <i class="fas fa-trash"></i>
+                    <img src="img/EBproducts/chicken.png" alt="">
+                    <div class="content">
+                        <h3>Chicken</h3>
+                        <span class="price">₱99.00/-</span>
+                        <span class="quantity">Qty: 1</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-trash"></i>
+                    <img src="img/EBproducts/pig.png" alt="">
+                    <div class="content">
+                        <h3>Pig</h3>
+                        <span class="price">₱499.00/-</span>
+                        <span class="quantity">Qty: 1</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-trash"></i>
+                    <img src="img/EBproducts/rice.png" alt="">
+                    <div class="content">
+                        <h3>Rice</h3>
+                        <span class="price">₱999.00/-</span>
+                        <span class="quantity">Qty: 1</span>
+                    </div>
+                </div>
+                <div class="total">Total: ₱1,597.00/-</div>
+                <a href="#" class="btn">Add to Truck</a>
+            </div>
+
+            <form action="" class="login-form">
+                <h3>Login Now</h3>
+                <input type="email" placeholder="Your email" class="box">
+                <input type="password" placeholder="Your password" class="box">
+                <p>Forgot password <a href="#">Click Here</a></p>
+                <p>Don't have any account? <a href="#">Create Now</a></p>
+                <input type="submit" value="Login now" class="btn">
+            </form>
+        </header>
+
+        <!--Home Section-->
+        <section class="home" id="home">
+            <div class="swiper home-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide" style="background:url(img/EB_shop1.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>Newly Harvested <span>CROPS</span> are now <span>Available!</span></h3>
+                            <p>Checkout on your trusted supplier's BARN</p>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background:url(img/shop\ 2.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>You may pay using <span>CREDIT CARDS</span></h3>
+                            <p>50% discount in some CROPS</p>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!--Services Section-->
+        <section class="services" id="services">
+            <h1 class="heading">Our <span>Services</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/feature-img-1.png" alt="">
+                    <h3>Fresh and Organic</h3>
+                    <p>We serve fresh and well harvested products with no chemicals added</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="box">
+                    <img src="img/feature-img-2.png" alt="">
+                    <h3>Free Delivery</h3>
+                    <p>We deliver free of charge within the city</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="box">
+                    <img src="img/feature-img-3.png" alt="">
+                    <h3>Easy payment</h3>
+                    <p>We accept payment through G-Cash and Paymaya</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        
+        <!--Products Section-->
+        <section class="products" id="products">
+            <h1 class="heading">Our <span>Products</span></h1>
+
+            <div class="swiper product-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/rice.png" alt="">
+                        <h3>Sack of Rice</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/product-2.png" alt="">
+                        <h3>Onion</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/pig.png" alt="">
+                        <h3>Pig</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/banana.png" alt="">
+                        <h3>Banana</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/product-5.png" alt="">
+                        <h3>Fresh Potatoes</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/product-7.png" alt="">
+                        <h3>Carrots</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/chicken.png" alt="">
+                        <h3>Chicken</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="img/EBproducts/corn-kernels.png" alt="">
+                        <h3>Corn Kernels</h3>
+                        <div class="price">₱999.00/- - 1,999/- </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Truck</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Category Section-->
+        <section class="categories" id="categories">
+            <h1 class="heading">In Demand<span>Products</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/EBproducts/cat-1.png" alt="">
+                    <h3>Fresh Vegetables</h3>
+                    <p>Up to 40% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+
+                <div class="box">
+                    <img src="img/EBproducts/cat-2.png" alt="">
+                    <h3>Fresh Fruits</h3>
+                    <p>Up to 40% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+
+                <div class="box">
+                    <img src="img/EBproducts/cat-3.png" alt="">
+                    <h3>Rice and Crops</h3>
+                    <p>Up to 40% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+
+                <div class="box">
+                    <img src="img/EBproducts/cat-4.png" alt="">
+                    <h3>Fresh Meat</h3>
+                    <p>Up to 40% off</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>    
+        </section>
+
+        <!--Counter Section
+        <section class="container">
+            <div class="countdown-wrapper">
+                <h1>Corn Harvesting Will Begin Soon...</h1>
+                <div class="countdown"></div>
+                <a href="#" class="btn">REGISTER NOW</a>
+            </div>
+        </section>-->
+
+        <!--Download App Section-->
+        <section class="app">
+            <div class="app-img">
+                <img src="img/app.png" alt="">
+            </div>
+            <div class="app-text">
+                <strong>Download App</strong>
+                <p>You may download at Google Play Store or App Store</p>
+                <div class="download-btn">
+                    <a href="#"><img src="img/dwnld-app1.png" alt=""></a>
+                    <a href="#"><img src="img/dwnld-app2.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Brand Partners Section-->
+        <section class="partner">
+            <div class="partners">
+                <h1 class="heading">Our <span>Brand Partners</span></h1>
+            </div>
+        </section>
+
+        <div class="logo-container">
+            <img src="img/EB_logo_DOA.png" alt="">
+            <img src="img/EB_logo_Navdanya.png" alt="">
+            <img src="img/EB_logo_Agzone.png" alt="">
+            <img src="img/EB_logo_RisingGreen.png" alt="">
+            <img src="img/EB_logo_Evergreen.png" alt="">
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    <ul class="navbar-nav mr-auto">
-    	<li class="nav-item">
-    		<a class="btn btn-lg btn-danger text-light ml-5"><i aria-hidden="true"></i> &#x26DF; My Truck</a>
-    	</li>
-    </ul>
-  </div>
-</nav>
-   	</div>
-   </div>
-   
-   
-   
-   
-   
-   
-   <!--slider start -->
-   
-   <div class="bd-example">
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/EB_shop1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-         <p class="slider-title">Newly Harvested CROPS are now Available!</p>
-         <p class="slider-text">checkout on your trusted suppliers' BARN</p>
-         <p class="buttob mt-5"> <a class="btn btn-lg btn-success">BUY NOW</a>&nbsp; &nbsp; <a class="btn btn-danger btn-lg">KNOW MORE</a></p> 
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/shop 2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <p class="slider-title">You may pay using Cards <i class="fa fa-credit-card-alt" aria-hidden="true"></i></p>
-         <p class="slider-text">5% off in some CROPS</p>
-         <p class="buttob mt-5"> <a class="btn btn-lg btn-success">BUY NOW</a>&nbsp; &nbsp; <a class="btn btn-danger btn-lg">KNOW MORE</a></p> 
-        </div>
-      </div>
-      
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-   
-   <!--slider end-->
-    
-<div class="container mt-5">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="outer-div">
-				<div class="inner-div1">
-					<h1 class="zoom-box-text">for FOOD MANUFACTURING </h1>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-md-6">
-			<div class="outer-div">
-				<div class="inner-div2">
-					<h1 class="zoom-box-text">for SUPERMARKETS </h1>
-				</div>
-			</div>
-		</div>
-	
-	</div>
-</div>
-   
-   
- <!--counter start-->
-  <div class="container counter">
-  	<div class="row justify-content-center mt-5 mb-2" style="padding-top: 150px">
-  		<h1 class="text-capitalize"><strong>CORN harvesting will begin soon... </strong></h1>
-  	</div>
-  	
-  	<div class="row justify-content-center rounded-pill mt-5" style="padding-bottom: 100px; font-size: 70px" id="countdown">
-  		
-  	</div>
-  	
-  	
-  	<div class="row mt-1 pb-5">
-  		<div class="col-md-12 text-center"><a class="btn btn-danger text-light btn-lg">REGISTER NOW</a></div>
-  	</div>
-  </div>
- <!--counter end-->     
-   
-   
-   
-   <div class="container">
-   	<div class="row mt-5 mb-5">
-   		<div class="col-md-12">
-   			<h1 class="text-center">Currently in DEMAND Agricultural Products</h1>
-   		</div>
-   	</div>
-   </div>
-   
-   
-   <div class="container">
-   	<div class="owl-carousel">
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_Corn.jpg">
-   				<div class="card-body">
-   					<div class="card-title">SWEET CORN</div>
-   					<div class="card-text">
-						Sweet corn also called sugar corn, is a variety of maize grown for human consumption with a high sugar content it's the result of a naturally occurring recessive mutation in the genes which control conversion of sugar to starch inside the endosperm of the corn kernel.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_Banana.jpg">
-   				<div class="card-body">
-   					<div class="card-title">BANANA</div>
-   					<div class="card-text">
-						A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_Rice.jpg">
-   				<div class="card-body">
-   					<div class="card-title">RICE</div>
-   					<div class="card-text">
-						Rice is the seed of the grass species Oryza sativa (Asian rice). The name wild rice is usually used for species of the genera Zizania and Porteresia, both wild and domesticated, although the term may also be used for primitive or uncultivated varieties of Oryza.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_Carrots.jpg">
-   				<div class="card-body">
-   					<div class="card-title">CARROTS</div>
-   					<div class="card-text">
-						The carrot (Daucus carota subsp. sativus) is a root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<!--
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/product/c141.jpg">
-   				<div class="card-body">
-   					<div class="card-title"> Product5</div>
-   					<div class="card-text">
-   						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic nobis molestias rem eius assumenda.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/product/c151.jpg">
-   				<div class="card-body">
-   					<div class="card-title"> Product6</div>
-   					<div class="card-text">
-   						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic nobis molestias rem eius assumenda.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/product/c161.jpg">
-   				<div class="card-body">
-   					<div class="card-title"> Product7</div>
-   					<div class="card-text">
-   						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic nobis molestias rem eius assumenda.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/product/c31.jpg">
-   				<div class="card-body">
-   					<div class="card-title"> Product8</div>
-   					<div class="card-text">
-   						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic nobis molestias rem eius assumenda.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
 
-	-->
-   	</div>
-   </div>
-   
-   
-   
-   
-   <div class="container">
-   	<div class="row mt-5 mb-5">
-   		<div class="col-md-12">
-   			<h1 class="text-center">Currently in DEMAND Poultry Products</h1>
-   		</div>
-   	</div>
-   </div>
-   
-   
-   <div class="container">
-   	<div class="owl-carousel">
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_Eggs.jpg">
-   				<div class="card-body">
-   					<div class="card-title">Chicken EGGS</div>
-   					<div class="card-text">
-						Eggs are laid by female animals of many different species, including birds, reptiles, amphibians, a few mammals, and fish, and many of these have been eaten by humans for thousands of years. Bird and reptile eggs consist of a protective eggshell, albumen (egg white), and vitellus (egg yolk), contained within various thin membranes.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_BroilerChicken.jpg">
-   				<div class="card-body">
-   					<div class="card-title">Broiler Chicken</div>
-   					<div class="card-text">
-						A broiler is any chicken (Gallus gallus domesticus) that is bred and raised specifically for meat production. Most commercial broilers reach slaughter weight between four and seven weeks of age, although slower growing breeds reach slaughter weight at approximately 14 weeks of age. Typical broiler chickens have white feathers and yellowish skin.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_Pig.jpg">
-   				<div class="card-body">
-   					<div class="card-title">Pigs</div>
-   					<div class="card-text">
-						The pig (Sus domesticus), often called swine, hog, or domestic pig, is an omnivorous, domesticated, even-toed, hoofed mammal. It is variously considered a subspecies of the Eurasian boar or a distinct species. The pig's head-plus-body length ranges from 0.9 to 1.8 m (3 to 6 ft), and adult pigs typically weigh between 50 and 350 kg (110 and 770 lb).<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/EBproducts/EB_Product_QuailEgg.jpg">
-   				<div class="card-body">
-   					<div class="card-title">Quail EGGS</div>
-   					<div class="card-text">
-						Quail eggs are considered a delicacy in many countries of the world, including Asia, Europe, and America. In Japanese cuisine, they are sometimes used raw or cooked as tamago in sushi and often found in bento lunches. In other countries, quail eggs are considered less exotic. In Brazil and Venezuela, a hard-boiled quail egg is a common topping.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<!--
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/product/M5.jpg">
-   				<div class="card-body">
-   					<div class="card-title"> Product5</div>
-   					<div class="card-text">
-   						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic nobis molestias rem eius assumenda.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/product/M6.jpg">
-   				<div class="card-body">
-   					<div class="card-title"> Product6</div>
-   					<div class="card-text">
-   						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic nobis molestias rem eius assumenda.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-   		
-   		<div>
-   			<div class="card product-card">
-   				<img class="card-img-top img-fluid" src="img/product/M7.jpg">
-   				<div class="card-body">
-   					<div class="card-title"> Product7</div>
-   					<div class="card-text">
-   						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic nobis molestias rem eius assumenda.<br/>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
-   					</div>
-   				</div>
-   			</div>
-   		</div>
-	-->
-   		
-   		
-   	</div>
-   </div>
-   
-   
-   
-   
-   <div class="container-fluid" id="discount">
-   	<div class="container discount-session-content">
-   		<div class="row">
-   			<div class="col-md-6">
-   				<h1 class="text-light text-capitalize">
-   					follow us on
-   				</h1><br/>
-   				<div class="social-icons">
-   					<!-- <i class="fa fa-facebook" aria-hidden="true"></i>
-   					<i class="fa fa-twitter" aria-hidden="true"></i> 
-   					<i class="fa fa-instagram" aria-hidden="true"></i> -->
+        <!--Footer Section-->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>E-Barn <i class="fas fa-shopping-basket"></i></h3>
+                    <p>A farm-to-phone app that connects consumers with the local famrers and growers within their communities and help strengthen local food systems.</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
 
-					   <a href="https://www.facebook.com/NHTechOfficialPage" target="_blank"><img src="img/fblogo.png" width="100"></a>
-					   <a href="https://twitter.com/KNeutron97" target="_blank"><img src="img/twitterlogo.png" width="100"></a>
-					   <a href="https://www.instagram.com/kennyneutron97" target="_blank"><img src="img/instagramlogo.png" width="100"></a>
-   				</div>
-   			</div>	
-   			
-   			<div class="col-md-6">
-   				<h1>Subscribe to get discount<br/> coupons & new Offers!</h1>
-   				<p class="discount-session-content-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt erat volutpat.</p><br/>
-   				<form class="form-inline">
-   					<div  class="form-group mx-sm-12 mb-2">
-   						<label for="inputPassword2" class="sr-only">Mail Id</label> 
-   						<input type="password" class="form-control" id="inputPassword2" placeholder="Enter Your Mail Id">
-   						&nbsp; &nbsp;
-   						
-   					</div>
-   					<button type="submit" class="btn btn-danger text-light mb-2">SUBSCRIBE US</button>
-   				</form>
-   			</div>
-   			
-   		</div>
-   	</div>
-   </div>
-   
-   
-   
-   
-   <div class="container mt-5 mb-5">
-   	<div class="row">
-   		<div class="col-md-12 text-center text-capitalize">
-   			<h1>our brand partners</h1>
-   		</div>
-   	</div>
-   </div>
-   
-   <div class="container mt-5 mb-5">
-   	<div class="owl-carousel owl-theme">
-   		<div class="item"><img src="img/EB_logo_DOA.png" class="img-fluid"></div>
-   		<div class="item"><img src="img/EB_logo_Navdanya.png" class="img-fluid"></div>
-   		<div class="item"><img src="img/EB_logo_Agzone.png" class="img-fluid"></div>
-   		<div class="item"><img src="img/EB_logo_RisingGreen.png" class="img-fluid"></div>
-   		<div class="item"><img src="img/EB_logo_Evergreen.png" class="img-fluid"></div>
-   	</div>
-   </div>
-   
-   
-   
-   
- <div class="container mt-5 mb-5">
- 	<div class="row">
- 		<div class="col-md-6 payment-method">
- 			<p class=" icon pt-5 pb-2"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></p>
- 			<h2 class="text-capitalize">Payment Method </h2>
- 			<p class="payment-methode-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eius, totam. Corrupti, laborum dolorem corporis accusamus commodi cum voluptates, beatae sunt ab, mollitia perferendis rerum deleniti placeat porro consectetur cupiditate?</p><br/>
- 			<img class="img-fluid" src="img/payment_methods.jpg">
- 		</div>
- 		
- 		<div class="col-md-6 payment-method">
- 			<p class=" icon pt-5 pb-2"><i class="fa fa-plane" aria-hidden="true"></i></p>
- 			<h2 class="text-capitalize">Shipment and delivery</h2>
- 			<p class="payment-methode-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eius, totam. Corrupti, laborum dolorem corporis accusamus commodi cum voluptates, beatae sunt ab, mollitia perferendis rerum deleniti placeat porro consectetur cupiditate?</p><br/>
- 			<p><i class="fa fa-arrow-right" aria-hidden="true"></i>  Delivery will vary based on purchase.</p>
- 			<p><i class="fa fa-arrow-right" aria-hidden="true"></i>  2 days <strong>free delivery</strong> only for <strong> prime members.</strong></p>
- 		</div>
- 	</div>
- </div>  
-   
-   
-   <footer class="container-fluid mt-5">
-   	<div class="container pt-5 pb-5">
-   		<div class="row">
-   			<div class="col-md-6">
-   				<h3>E-BARN.COM</h3>
-   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et eligendi at illo? Repellendus explicabo earum ab repudiandae fugit et eaque iusto cumque labore! At, accusamus explicabo reprehenderit natus cumque!</p>
-   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem consequatur vero reiciendis pariatur, qui, assumenda nobis vitae quia natus quod, iste quae. Corrupti, eum, adipisci mollitia voluptatum est consequatur hic?</p>
-   			</div>
-   			
-   			
-   			<div class="col-md-3">
-   			<h3>Latest products</h3>
-   				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/EB_peanut.jpg" alt="">
-   				<div class="media-body">
-   					<h5>Peanut</h5>
-   					<del>Php160/Kg</del> &nbsp; Php150/Kg
-   				</div>
-   					
-   				</div>
-   				
-   				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/EB_sweetpotato.jpg" alt="">
-   				<div class="media-body">
-   					<h5>Sweet Potato</h5>
-   					<del>Php40/Kg</del> &nbsp; Php30/Kg
-   				</div>
-   					
-   				</div>
-   			</div>
-   			
-   			
-   			
-   			<div class="col-md-3">
-   			<h3>Top Rated products</h3>
-   				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/EB_carrots.jpg" alt="">
-   				<div class="media-body">
-   					<h5>Carrots</h5>
-   					<del>Php120/Kg</del> &nbsp; Php112/Kg
-   				</div>
-   					
-   				</div>
-   				
-   				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/EB_lettuce.jpg" alt="">
-   				<div class="media-body">
-   					<h5>Lettuce</h5>
-   					<del>Php125/Kg</del> &nbsp; Php120/Kg
-   				</div>
-   					
-   				</div>
-   			</div>
-   			
-   		</div>
-   	</div>
-   </footer> 
-   
-   
-   
-   <div class="container-fluid bg-dark">
-   	<div class="row">
-   		<div class="col-md-12 text-capitalize text-center text-light" >
-   			DESIGNED BY KennyNeutron . Neuhex Technologies . DATE 03/29/2022  - EBARN.COM
-   		</div>
-   	</div>
-   </div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-   <script>
-	  
-	$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:false,
-            loop:false
-        }
-    }
-})  
-   </script>
-  </body>
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+63-912-345-6789</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+63-912-345-6789</a>
+                    <a href="#" class="links"><i class="fas fa-envelope"></i>xsavior145@gmail.com</a>
+                    <a href="#" class="links"><i class="fas fa-map-marker-alt"></i>North Cotabato, Kidapawan City-9400</a>
+                </div>
+
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="#services" class="links"><i class="fas fa-arrow-right"></i>Services</a>
+                    <a href="#products" class="links"><i class="fas fa-arrow-right"></i>Products</a>
+                    <a href="#categories" class="links"><i class="fas fa-arrow-right"></i>Categories</a>
+                    <a href="#countdown" class="links"><i class="fas fa-arrow-right"></i>Countdown</a>
+                    <a href="#about" class="links"><i class="fas fa-arrow-right"></i>About</a>
+                </div>
+
+                <div class="box">
+                    <h3>Newsletter</h3>
+                    <p>Follow us for our latest updates</p>
+                    <input type="email" placeholder="Your email" class="email">
+                    <input type="submit" value="Follow" class="btn">
+                    <img src="img/payment_methods.png" class="payment-img" alt="">
+                </div>
+            </div>
+
+            <div class="credit">Created by: <span> E-Barn | Taweeezy</span> | All Rights Reserved</div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Custom JS File Link-->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
